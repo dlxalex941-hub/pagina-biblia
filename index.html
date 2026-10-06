@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f4ed">
+  <meta name="description" content="Lee los 50 capítulos de Génesis en la Reina-Valera 1960.">
+  <title>Senda | Génesis en RVR1960</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <style>
+    :root{color-scheme:light;--paper:#f5f4ed;--ink:#202b25;--muted:#6b746d;--green:#245846;--deep:#163d32;--coral:#d47d62;--line:#dfe2d9;--white:#fffefa;--serif:"Fraunces",Georgia,serif;--sans:"DM Sans",sans-serif}
+    *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}a{color:inherit}button,input{font:inherit}
+    .topbar{height:76px;padding:0 clamp(22px,6vw,92px);display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #202b2517}.brand{display:flex;align-items:center;gap:11px;color:var(--deep);font-size:19px;font-weight:700;text-decoration:none}.brand-mark{width:34px;height:34px;display:grid;place-items:center;border-radius:50%;background:var(--green);color:#f8f4e8}.brand-mark svg{width:19px}.edition{display:flex;align-items:center;gap:9px;color:var(--muted);font-size:12px;font-weight:600}.edition-dot{width:7px;height:7px;border-radius:50%;background:var(--coral)}
+    main{max-width:1240px;margin:0 auto;padding:48px 28px 72px}.hero{min-height:285px;position:relative;isolation:isolate;display:flex;align-items:flex-end;overflow:hidden;padding:clamp(28px,5vw,58px);border-radius:5px;background:#38594c url("https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=1800&q=85") center 54%/cover no-repeat;color:white;animation:arrive .65s ease-out both}.hero:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#10271fbd,#10271f38 75%),linear-gradient(0deg,#10271f2e,transparent 70%)}.hero-copy{max-width:620px}.eyebrow{display:flex;align-items:center;gap:10px;margin:0 0 12px;color:#e5d9b8;font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase}.eyebrow:before{content:"";width:24px;height:1px;background:var(--coral)}h1{margin:0;font-family:var(--serif);font-size:clamp(42px,6vw,68px);font-weight:500;line-height:1.04}.hero-subtitle{margin:13px 0 0;color:#ffffffde;font-size:14px}
+    .layout{display:grid;grid-template-columns:minmax(0,1fr) 345px;gap:22px;margin-top:23px;align-items:start}.reader,.chapters{background:var(--white);border:1px solid var(--line);border-radius:4px}.reader{min-height:365px;padding:clamp(25px,4vw,43px)}.reader-topline{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-bottom:21px;border-bottom:1px solid var(--line)}.reader-label{margin:0;color:var(--muted);font-size:12px;font-weight:600}.chapter-count{padding:7px 10px;background:#edf2ec;color:var(--green);font-size:11px;font-weight:700;white-space:nowrap}.chapter-heading{margin:32px 0 9px;font-family:var(--serif);font-size:36px;font-weight:500}.chapter-message{max-width:490px;margin:0;color:var(--muted);font-size:14px;line-height:1.75}.bible-frame{display:block;width:100%;height:680px;margin-top:22px;border:1px solid var(--line);border-radius:3px;background:white}.read-link{display:inline-flex;min-height:38px;align-items:center;justify-content:center;gap:8px;margin-top:12px;padding:0 12px;border:1px solid var(--line);border-radius:3px;color:var(--green);font-size:12px;font-weight:600;text-decoration:none;transition:background .18s}.read-link:hover{background:#edf2ec}.read-link svg{width:14px;height:14px}.chapter-nav{display:flex;justify-content:space-between;gap:12px;margin-top:24px}.nav-button{min-height:38px;padding:0 12px;border:1px solid var(--line);border-radius:3px;background:transparent;color:var(--ink);cursor:pointer;font-size:12px;font-weight:600}.nav-button:hover:not(:disabled){border-color:var(--green);color:var(--green)}.nav-button:disabled{opacity:.4;cursor:not-allowed}
+.chapters{padding:21px}.chapters-header{display:flex;align-items:baseline;justify-content:space-between;gap:12px;position:relative}.chapters-title{position:relative;z-index:1;margin:0;font-family:var(--serif);font-size:21px;font-weight:500}.chapters-title::before{content:"";position:absolute;left:0;top:-8px;width:calc(100% + 175px);height:calc(100% + 20px);border-radius:0;background-image:url("https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=1800&q=85");background-size:cover;background-position:center;filter:grayscale(.05) contrast(1.7) saturate(1.2) blur(1.2px);opacity:.55;z-index:-1}.chapter-total{color:var(--muted);font-size:11px}.search-wrap{position:relative;display:block;margin-top:17px}.search-wrap svg{position:absolute;left:12px;top:50%;width:15px;height:15px;color:#858e86;transform:translateY(-50%);pointer-events:none}#chapter-search{width:100%;height:39px;padding:0 12px 0 36px;border:1px solid var(--line);border-radius:3px;outline:none;background:#fcfcf8;color:var(--ink);font-size:12px}#chapter-search:focus{border-color:var(--green);box-shadow:0 0 0 2px #2458461f}.chapter-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:7px;max-height:254px;overflow-y:auto;margin-top:15px;padding-right:3px;scrollbar-color:#c4cec4 transparent;scrollbar-width:thin}.chapter-number{aspect-ratio:1.18;display:grid;place-items:center;border:1px solid #e6e8e1;border-radius:3px;background:transparent;color:#48534b;cursor:pointer;font-size:12px;font-weight:600;transition:border-color .15s,background .15s,color .15s}.chapter-number:hover{border-color:var(--green);color:var(--green)}.chapter-number[aria-current=true]{border-color:var(--green);background:var(--green);color:white}.no-results{grid-column:1/-1;padding:16px 3px;color:var(--muted);font-size:12px}.source-note{display:flex;align-items:flex-start;gap:10px;margin:17px 2px 0;color:var(--muted);font-size:11px;line-height:1.6}.source-note svg{flex:0 0 auto;width:15px;height:15px;margin-top:1px;color:var(--coral)}.source-note a{color:var(--green);text-underline-offset:2px}footer{max-width:1240px;margin:0 auto;padding:0 28px 28px;color:var(--muted);font-size:11px}:focus-visible{outline:2px solid var(--coral);outline-offset:3px}@keyframes arrive{from{opacity:0;transform:translateY(9px)}to{opacity:1;transform:translateY(0)}}
+.page-ornament{position:relative;overflow:hidden;margin-top:24px;border:1px solid rgba(35,74,59,.12);border-radius:5px;background:#264936}.page-ornament::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(14,29,24,.82),rgba(14,29,24,.42) 45%,rgba(14,29,24,.72)),url("https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=1800&q=85") center/cover no-repeat;opacity:.85}.page-ornament-inner{position:relative;z-index:1;padding:28px 26px;display:flex;align-items:center;justify-content:space-between;gap:18px;color:#f3efe5}.page-ornament-kicker{margin:0 0 7px;color:#e7d4a8;font-size:11px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase}.page-ornament-title{margin:0;font-family:var(--serif);font-size:clamp(28px,3vw,42px);font-weight:500;line-height:1.05}.page-ornament-text{margin:0;max-width:600px;color:rgba(255,255,255,.8);font-size:13px;line-height:1.7}.page-ornament-badge{padding:9px 12px;border:1px solid rgba(255,255,255,.22);border-radius:999px;background:rgba(255,255,255,.08);font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap}.custom-dropdown{position:relative}.custom-dropdown-toggle{width:100%;height:40px;padding:0 40px 0 14px;border:1px solid var(--line);border-radius:4px;background:linear-gradient(180deg,#fff 0%,#f5f7f1 100%);color:var(--ink);font-size:12px;font-weight:600;letter-spacing:.02em;display:flex;align-items:center;justify-content:space-between;cursor:pointer;text-align:left}.custom-dropdown-toggle[aria-expanded="true"]{border-color:var(--green);box-shadow:0 0 0 2px rgba(36,88,70,.12)}.custom-dropdown-panel{display:none;position:absolute;left:0;right:0;top:calc(100% + 8px);max-height:220px;overflow:auto;padding:10px 8px;border:1px solid var(--line);border-radius:4px;background:#fff;box-shadow:0 14px 28px rgba(25,45,35,.12);z-index:20}.custom-dropdown.open .custom-dropdown-panel{display:block}.custom-dropdown-option{display:block;width:100%;padding:10px 12px;border:0;background:transparent;border-radius:4px;color:var(--ink);text-align:left;font-size:12px;font-weight:500;cursor:pointer}.custom-dropdown-option:hover{background:#edf2ec;color:var(--green)}@media(max-width:980px){main{padding:32px 18px 56px}.layout{grid-template-columns:1fr;gap:18px}.hero{min-height:240px}.chapters{order:0}.reader{min-height:0}.book-picker + .book-picker{margin-top:12px}.chapters{padding:18px}}@media(max-width:760px){main{padding:28px 16px 42px}.topbar{height:64px;padding:0 17px}.layout{grid-template-columns:1fr;gap:15px;margin-top:15px}.hero{min-height:220px;background-position:60% center}.chapter-grid{max-height:220px;grid-template-columns:repeat(6,minmax(0,1fr))}.chapter-number{aspect-ratio:1.2}.reader{min-height:0}.bible-frame{height:72vh;min-height:520px}.page-ornament-inner{flex-direction:column;align-items:flex-start}.page-ornament-text{max-width:none}.page-ornament-badge{align-self:flex-start}footer{padding:0 16px 22px}}@media(max-width:560px){.brand{font-size:17px}.edition{font-size:10px}.eyebrow{font-size:10px}.hero{min-height:180px;padding:20px 18px}.h1,h1{font-size:clamp(34px,12vw,54px)}.reader,.chapters{padding:16px}.reader-topline{flex-direction:column;align-items:flex-start}.chapter-count{align-self:flex-start}.chapter-heading{font-size:30px}.book-switcher{grid-template-columns:repeat(2,minmax(0,1fr))}.chapter-grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:6px}.chapter-number{font-size:11px}.page-ornament-inner{padding:20px 18px}.page-ornament-title{font-size:28px}.page-ornament-text{font-size:12px;line-height:1.65}.source-note{font-size:10px;line-height:1.5}.custom-dropdown-toggle{height:38px}.search-wrap svg{width:13px;height:13px}.section-label{letter-spacing:.06em}}@media(max-width:420px){.edition{font-size:9px}.topbar{padding:0 14px}.hero-subtitle{font-size:12px}.chapter-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:5px}.chapter-number{aspect-ratio:1}.chapter-heading{font-size:28px}.page-ornament-badge{font-size:10px}}
+    @media(max-width:420px){.edition{font-size:10px}.brand{font-size:17px}.chapter-grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:6px}.reader-topline{align-items:flex-start}.chapter-count{font-size:10px}.chapter-heading{font-size:30px}.hero{min-height:180px;padding:22px 18px}.hero-subtitle{font-size:12.5px}.page-ornament{margin-top:18px}.page-ornament-inner{padding:20px 18px}.page-ornament-title{font-size:28px}.page-ornament-text{font-size:12px;line-height:1.65}.source-note{font-size:10px;line-height:1.5}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+    .scripture{margin-top:24px;font-family:var(--serif);font-size:17px;line-height:1.8;color:#303a33}.verse{display:grid;grid-template-columns:25px minmax(0,1fr);gap:10px;margin:0 0 12px}.verse-number{padding-top:4px;color:var(--coral);font-family:var(--sans);font-size:11px;font-weight:700}.verse-text{margin:0}.chapter-status{margin:26px 0;color:var(--muted);font-size:14px;line-height:1.7}.section-label{margin:0 0 6px;color:var(--green);font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}.book-picker{display:flex;flex-direction:column;gap:10px;margin-bottom:20px;padding:4px;border-radius:5px;background:#edf2ec}.book-picker + .book-picker{margin-top:18px}.book-switcher{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;margin:0;padding:0;background:transparent}.book-option{min-height:38px;border:1px solid transparent;border-radius:3px;background:transparent;color:var(--muted);cursor:pointer;font-size:12px;font-weight:600}.book-option[aria-pressed=true]{border-color:var(--line);background:var(--white);color:var(--green);box-shadow:0 1px 2px #202b2510}.book-option:hover:not([aria-pressed=true]){color:var(--green)}.more-books{display:block;position:relative;z-index:2}.more-books select{width:100%;height:40px;padding:0 36px 0 12px;border:1px solid var(--line);border-radius:4px;background:linear-gradient(180deg,#fff 0%,#f5f7f1 100%);color:var(--muted);font-size:12px;font-weight:700;letter-spacing:.02em;appearance:menulist;-webkit-appearance:menulist;direction:ltr;box-shadow:inset 0 1px 0 rgba(255,255,255,.8),0 2px 8px rgba(26,41,35,.05);cursor:pointer}.more-books select.is-active{border-color:var(--green);background:linear-gradient(180deg,#fff 0%,#f0f7f2 100%);color:var(--green)}.more-books select:focus{border-color:var(--green);outline:none;box-shadow:0 0 0 2px #2458461f}.more-books::after{content:"▾";position:absolute;right:12px;top:50%;font-size:14px;color:var(--green);transform:translateY(-50%);pointer-events:none}.custom-dropdown{position:relative}.custom-dropdown-toggle{display:flex;align-items:center;justify-content:space-between;width:100%;height:40px;padding:0 12px;border:1px solid var(--line);border-radius:4px;background:linear-gradient(180deg,#fff 0%,#f5f7f1 100%);color:var(--muted);font-size:12px;font-weight:700;letter-spacing:.02em;cursor:pointer;box-shadow:inset 0 1px 0 rgba(255,255,255,.8),0 2px 8px rgba(26,41,35,.05)}.custom-dropdown-toggle:focus{border-color:var(--green);outline:none;box-shadow:0 0 0 2px #2458461f}.custom-dropdown-panel{position:absolute;left:0;right:0;top:100%;margin-top:4px;display:none;max-height:220px;overflow:auto;border:1px solid var(--line);border-radius:4px;background:#fff;box-shadow:0 10px 22px rgba(19,33,28,.08);z-index:10}.custom-dropdown.open .custom-dropdown-panel{display:block}.custom-dropdown-option{display:block;width:100%;padding:10px 12px;border:0;background:transparent;color:var(--ink);text-align:left;font-size:12px;font-weight:500;cursor:pointer}.custom-dropdown-option:hover{background:#edf2ec}.custom-dropdown-option:first-child{border-radius:4px 4px 0 0}.custom-dropdown-option:last-child{border-radius:0 0 4px 4px}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Senda, inicio"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21V11"/><path d="M12 14c-4.4 0-7-2.5-7-6.5C9.7 7.5 12 10 12 14Z"/><path d="M12 11c0-4 2.3-6.5 7-6.5 0 4-2.6 6.5-7 6.5Z"/></svg></span>Senda</a>
+    <div class="edition"><span class="edition-dot" aria-hidden="true"></span> REINA-VALERA 1960</div>
+  </header>
+  <main id="inicio">
+    <section class="hero" aria-labelledby="page-title"><div class="hero-copy"><p class="eyebrow">Antiguo Testamento</p><h1 id="page-title">Génesis</h1><p class="hero-subtitle">Explora los capítulos en Reina-Valera 1960.</p></div></section>
+    <div class="layout">
+      <section class="reader" aria-labelledby="chapter-heading">
+        <div class="reader-topline"><p class="reader-label">LECTURA BÍBLICA <span aria-hidden="true">·</span> RVR1960</p><span class="chapter-count" id="chapter-count">CAPÍTULO 01 DE 50</span></div>
+        <h2 class="chapter-heading" id="chapter-heading">Génesis 1</h2>
+        <div class="scripture" id="chapter-content" aria-live="polite" aria-busy="true"><p class="chapter-status">Cargando Génesis 1…</p></div>
+        <div class="chapter-nav" aria-label="Navegar capítulos"><button class="nav-button" id="previous-button" type="button" disabled>← Anterior</button><button class="nav-button" id="next-button" type="button">Siguiente →</button></div>
+      </section>
+      <aside class="chapters" aria-labelledby="chapters-title">
+        <div class="book-picker" aria-label="Cambiar libro">
+          <p class="section-label">Antiguo Testamento</p>
+          <div class="book-switcher" role="group" aria-label="Libros disponibles">
+            <button class="book-option" id="genesis-book" type="button" aria-pressed="true">Génesis</button>
+            <button class="book-option" id="exodus-book" type="button" aria-pressed="false">Éxodo</button>
+            <button class="book-option" id="leviticus-book" type="button" aria-pressed="false">Levítico</button>
+            <button class="book-option" id="numbers-book" type="button" aria-pressed="false">Números</button>
+          </div>
+          <div class="custom-dropdown" id="more-books-menu">
+            <button class="custom-dropdown-toggle" id="more-books-toggle" type="button" aria-haspopup="listbox" aria-expanded="false">
+              <span id="more-books-label">Más libros…</span>
+              <span aria-hidden="true">▾</span>
+            </button>
+            <div class="custom-dropdown-panel" role="listbox" aria-label="Más libros">
+              <button class="custom-dropdown-option" type="button" data-book="deuteronomy">Deuteronomio</button>
+              <button class="custom-dropdown-option" type="button" data-book="joshua">Josué</button>
+              <button class="custom-dropdown-option" type="button" data-book="judges">Jueces</button>
+              <button class="custom-dropdown-option" type="button" data-book="ruth">Rut</button>
+              <button class="custom-dropdown-option" type="button" data-book="first-samuel">1 Samuel</button>
+              <button class="custom-dropdown-option" type="button" data-book="second-samuel">2 Samuel</button>
+              <button class="custom-dropdown-option" type="button" data-book="first-kings">1 Reyes</button>
+              <button class="custom-dropdown-option" type="button" data-book="second-kings">2 Reyes</button>
+              <button class="custom-dropdown-option" type="button" data-book="first-chronicles">1 Crónicas</button>
+              <button class="custom-dropdown-option" type="button" data-book="second-chronicles">2 Crónicas</button>
+              <button class="custom-dropdown-option" type="button" data-book="ezra">Esdras</button>
+              <button class="custom-dropdown-option" type="button" data-book="nehemiah">Nehemías</button>
+              <button class="custom-dropdown-option" type="button" data-book="esther">Ester</button>
+              <button class="custom-dropdown-option" type="button" data-book="job">Job</button>
+              <button class="custom-dropdown-option" type="button" data-book="psalms">Salmos</button>
+              <button class="custom-dropdown-option" type="button" data-book="proverbs">Proverbios</button>
+              <button class="custom-dropdown-option" type="button" data-book="ecclesiastes">Eclesiastés</button>
+              <button class="custom-dropdown-option" type="button" data-book="cantares">Cantar de los Cantares</button>
+              <button class="custom-dropdown-option" type="button" data-book="isaiah">Isaías</button>
+              <button class="custom-dropdown-option" type="button" data-book="jeremiah">Jeremías</button>
+              <button class="custom-dropdown-option" type="button" data-book="lamentations">Lamentaciones</button>
+              <button class="custom-dropdown-option" type="button" data-book="ezekiel">Ezequiel</button>
+              <button class="custom-dropdown-option" type="button" data-book="daniel">Daniel</button>
+              <button class="custom-dropdown-option" type="button" data-book="hosea">Oseas</button>
+              <button class="custom-dropdown-option" type="button" data-book="joel">Joel</button>
+              <button class="custom-dropdown-option" type="button" data-book="amos">Amós</button>
+              <button class="custom-dropdown-option" type="button" data-book="obadiah">Abdías</button>
+              <button class="custom-dropdown-option" type="button" data-book="jonah">Jonás</button>
+              <button class="custom-dropdown-option" type="button" data-book="micah">Miqueas</button>
+              <button class="custom-dropdown-option" type="button" data-book="nahum">Nahúm</button>
+              <button class="custom-dropdown-option" type="button" data-book="habakkuk">Habacuc</button>
+              <button class="custom-dropdown-option" type="button" data-book="zephaniah">Sofonías</button>
+              <button class="custom-dropdown-option" type="button" data-book="haggai">Hageo</button>
+              <button class="custom-dropdown-option" type="button" data-book="zechariah">Zacarías</button>
+              <button class="custom-dropdown-option" type="button" data-book="malachi">Malaquías</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="book-picker" aria-label="Nuevo Testamento">
+          <p class="section-label">Nuevo Testamento</p>
+          <div class="book-switcher" role="group" aria-label="Libros del Nuevo Testamento">
+            <button class="book-option" id="matthew-book" type="button" aria-pressed="false">Mateo</button>
+            <button class="book-option" id="mark-book" type="button" aria-pressed="false">Marcos</button>
+            <button class="book-option" id="luke-book" type="button" aria-pressed="false">Lucas</button>
+            <button class="book-option" id="john-book" type="button" aria-pressed="false">Juan</button>
+          </div>
+          <div class="custom-dropdown" id="nt-more-books-menu">
+            <button class="custom-dropdown-toggle" id="nt-more-books-toggle" type="button" aria-haspopup="listbox" aria-expanded="false">
+              <span id="nt-more-books-label">Más libros…</span>
+              <span aria-hidden="true">▾</span>
+            </button>
+            <div class="custom-dropdown-panel" role="listbox" aria-label="Más libros del Nuevo Testamento">
+              <button class="custom-dropdown-option" type="button" data-book="acts">Hechos</button>
+              <button class="custom-dropdown-option" type="button" data-book="romans">Romanos</button>
+              <button class="custom-dropdown-option" type="button" data-book="first-corinthians">1 Corintios</button>
+              <button class="custom-dropdown-option" type="button" data-book="second-corinthians">2 Corintios</button>
+              <button class="custom-dropdown-option" type="button" data-book="galatians">Gálatas</button>
+              <button class="custom-dropdown-option" type="button" data-book="ephesians">Efesios</button>
+              <button class="custom-dropdown-option" type="button" data-book="philippians">Filipenses</button>
+              <button class="custom-dropdown-option" type="button" data-book="colossians">Colosenses</button>
+              <button class="custom-dropdown-option" type="button" data-book="first-thessalonians">1 Tesalonicenses</button>
+              <button class="custom-dropdown-option" type="button" data-book="second-thessalonians">2 Tesalonicenses</button>
+              <button class="custom-dropdown-option" type="button" data-book="first-timothy">1 Timoteo</button>
+              <button class="custom-dropdown-option" type="button" data-book="second-timothy">2 Timoteo</button>
+              <button class="custom-dropdown-option" type="button" data-book="titus">Tito</button>
+              <button class="custom-dropdown-option" type="button" data-book="philemon">Filemón</button>
+              <button class="custom-dropdown-option" type="button" data-book="hebrews">Hebreos</button>
+              <button class="custom-dropdown-option" type="button" data-book="james">Santiago</button>
+              <button class="custom-dropdown-option" type="button" data-book="first-peter">1 Pedro</button>
+              <button class="custom-dropdown-option" type="button" data-book="second-peter">2 Pedro</button>
+              <button class="custom-dropdown-option" type="button" data-book="first-john">1 Juan</button>
+              <button class="custom-dropdown-option" type="button" data-book="second-john">2 Juan</button>
+              <button class="custom-dropdown-option" type="button" data-book="third-john">3 Juan</button>
+              <button class="custom-dropdown-option" type="button" data-book="jude">Judas</button>
+              <button class="custom-dropdown-option" type="button" data-book="revelation">Apocalipsis</button>
+            </div>
+          </div>
+        </div>
+        <div class="chapters-header"><h2 class="chapters-title" id="chapters-title">Los capítulos</h2><span class="chapter-total" id="chapter-total">50 en total</span></div>
+        <label class="search-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg><input id="chapter-search" type="search" inputmode="numeric" autocomplete="off" placeholder="Buscar capítulo" aria-label="Buscar capítulo por número"></label>
+        <nav class="chapter-grid" id="chapter-grid" aria-label="Capítulos de Génesis"></nav>
+        <p class="source-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/></svg><span>Reina-Valera 1960, dominio público. Transcripción de <a id="chapter-source" href="https://es.wikisource.org/wiki/Biblia_Reina-Valera_1909/G%C3%A9nesis/1" target="_blank" rel="noopener noreferrer">Wikisource</a>, bajo licencia <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.es" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>.</span></p>
+      </aside>
+    </div>
+    <section class="page-ornament" aria-label="Decoración de la página">
+      <div class="page-ornament-inner">
+        <div>
+          <p class="page-ornament-kicker">Senda</p>
+          <h3 class="page-ornament-title">La Biblia, con claridad y orden.</h3>
+        </div>
+        <p class="page-ornament-text">Explora libros, capítulos y lectura continua en la edición Reina-Valera 1960, con todo el contenido de la Santa Escritura organizado para una experiencia serena y elegante.</p>
+        <span class="page-ornament-badge">RVR1960</span>
+      </div>
+    </section>
+  </main>
+  <footer>Texto Reina-Valera 1960 de dominio público. Transcripción consultada en Wikisource, licencia CC BY-SA 4.0.</footer>
+  <script>
+    const books = {
+      genesis: { name: "Génesis", slug: "genesis", chapters: 50 },
+      exodus: { name: "Éxodo", slug: "exodo", chapters: 40 },
+      leviticus: { name: "Levítico", slug: "levitico", chapters: 27 },
+      numbers: { name: "Números", slug: "numeros", chapters: 36 },
+      deuteronomy: { name: "Deuteronomio", slug: "deuteronomio", chapters: 34 },
+      joshua: { name: "Josué", slug: "josue", chapters: 24 },
+      judges: { name: "Jueces", slug: "jueces", chapters: 21 },
+      ruth: { name: "Rut", slug: "rut", chapters: 4 },
+      "first-samuel": { name: "1 Samuel", slug: "1-samuel", chapters: 31 },
+      "second-samuel": { name: "2 Samuel", slug: "2-samuel", chapters: 24 },
+      "first-kings": { name: "1 Reyes", slug: "1-reyes", chapters: 22 },
+      "second-kings": { name: "2 Reyes", slug: "2-reyes", chapters: 25 },
+      "first-chronicles": { name: "1 Crónicas", slug: "1-cronicas", chapters: 29 },
+      "second-chronicles": { name: "2 Crónicas", slug: "2-cronicas", chapters: 36 },
+      ezra: { name: "Esdras", slug: "esdras", chapters: 10 },
+      nehemiah: { name: "Nehemías", slug: "nehemias", chapters: 13 },
+      esther: { name: "Ester", slug: "ester", chapters: 10 },
+      job: { name: "Job", slug: "job", chapters: 42 },
+      psalms: { name: "Salmos", slug: "salmos", chapters: 150 },
+      proverbs: { name: "Proverbios", slug: "proverbios", chapters: 31 },
+      ecclesiastes: { name: "Eclesiastés", slug: "eclesiastes", chapters: 12 },
+      cantares: { name: "Cantar de los Cantares", slug: "cantares", chapters: 8 },
+      isaiah: { name: "Isaías", slug: "isaias", chapters: 66 },
+      jeremiah: { name: "Jeremías", slug: "jeremias", chapters: 52 },
+      lamentations: { name: "Lamentaciones", slug: "lamentaciones", chapters: 5 },
+      ezekiel: { name: "Ezequiel", slug: "ezequiel", chapters: 48 },
+      daniel: { name: "Daniel", slug: "daniel", chapters: 12 },
+      hosea: { name: "Oseas", slug: "oseas", chapters: 14 },
+      joel: { name: "Joel", slug: "joel", chapters: 3 },
+      amos: { name: "Amós", slug: "amos", chapters: 9 },
+      obadiah: { name: "Abdías", slug: "abdias", chapters: 1 },
+      jonah: { name: "Jonás", slug: "jonas", chapters: 4 },
+      micah: { name: "Miqueas", slug: "miqueas", chapters: 7 },
+      nahum: { name: "Nahúm", slug: "nahum", chapters: 3 },
+      habakkuk: { name: "Habacuc", slug: "habacuc", chapters: 3 },
+      zephaniah: { name: "Sofonías", slug: "sofonias", chapters: 3 },
+      haggai: { name: "Hageo", slug: "hageo", chapters: 2 },
+      zechariah: { name: "Zacarías", slug: "zacarias", chapters: 14 },
+      malachi: { name: "Malaquías", slug: "malaquias", chapters: 4 },
+      matthew: { name: "Mateo", slug: "mateo", chapters: 28 },
+      mark: { name: "Marcos", slug: "marcos", chapters: 16 },
+      luke: { name: "Lucas", slug: "lucas", chapters: 24 },
+      john: { name: "Juan", slug: "juan", chapters: 21 },
+      acts: { name: "Hechos", slug: "hechos", chapters: 28 },
+      romans: { name: "Romanos", slug: "romanos", chapters: 16 },
+      "first-corinthians": { name: "1 Corintios", slug: "1-corintios", chapters: 16 },
+      "second-corinthians": { name: "2 Corintios", slug: "2-corintios", chapters: 13 },
+      galatians: { name: "Gálatas", slug: "galatas", chapters: 6 },
+      ephesians: { name: "Efesios", slug: "efesios", chapters: 6 },
+      philippians: { name: "Filipenses", slug: "filipenses", chapters: 4 },
+      colossians: { name: "Colosenses", slug: "colosenses", chapters: 4 },
+      "first-thessalonians": { name: "1 Tesalonicenses", slug: "1-tesalonicenses", chapters: 5 },
+      "second-thessalonians": { name: "2 Tesalonicenses", slug: "2-tesalonicenses", chapters: 3 },
+      "first-timothy": { name: "1 Timoteo", slug: "1-timoteo", chapters: 6 },
+      "second-timothy": { name: "2 Timoteo", slug: "2-timoteo", chapters: 4 },
+      titus: { name: "Tito", slug: "tito", chapters: 3 },
+      philemon: { name: "Filemón", slug: "filemon", chapters: 1 },
+      hebrews: { name: "Hebreos", slug: "hebreos", chapters: 13 },
+      james: { name: "Santiago", slug: "santiago", chapters: 5 },
+      "first-peter": { name: "1 Pedro", slug: "1-pedro", chapters: 5 },
+      "second-peter": { name: "2 Pedro", slug: "2-pedro", chapters: 3 },
+      "first-john": { name: "1 Juan", slug: "1-juan", chapters: 5 },
+      "second-john": { name: "2 Juan", slug: "2-juan", chapters: 1 },
+      "third-john": { name: "3 Juan", slug: "3-juan", chapters: 1 },
+      jude: { name: "Judas", slug: "judas", chapters: 1 },
+      revelation: { name: "Apocalipsis", slug: "apocalipsis", chapters: 22 }
+    };
+    const chapterGrid = document.querySelector("#chapter-grid");
+    const chapterSearch = document.querySelector("#chapter-search");
+    const moreBooksMenu = document.querySelector("#more-books-menu");
+    const moreBooksToggle = document.querySelector("#more-books-toggle");
+    const moreBooksLabel = document.querySelector("#more-books-label");
+    const moreBooksOptions = [...document.querySelectorAll("#more-books-menu .custom-dropdown-option")];
+    const chapterHeading = document.querySelector("#chapter-heading");
+    const chapterCount = document.querySelector("#chapter-count");
+    const chapterTotal = document.querySelector("#chapter-total");
+    const chapterContent = document.querySelector("#chapter-content");
+    const chapterSource = document.querySelector("#chapter-source");
+    const previousButton = document.querySelector("#previous-button");
+    const nextButton = document.querySelector("#next-button");
+    const bookButtons = {
+      genesis: document.querySelector("#genesis-book"),
+      exodus: document.querySelector("#exodus-book"),
+      leviticus: document.querySelector("#leviticus-book"),
+      numbers: document.querySelector("#numbers-book")
+    };
+    const ntBookButtons = {
+      matthew: document.querySelector("#matthew-book"),
+      mark: document.querySelector("#mark-book"),
+      luke: document.querySelector("#luke-book"),
+      john: document.querySelector("#john-book")
+    };
+    const ntMoreBooksMenu = document.querySelector("#nt-more-books-menu");
+    const ntMoreBooksToggle = document.querySelector("#nt-more-books-toggle");
+    const ntMoreBooksLabel = document.querySelector("#nt-more-books-label");
+    const ntMoreBooksOptions = [...document.querySelectorAll(".custom-dropdown-option")];
+    let currentBook = "genesis";
+    let currentChapter = 1;
+
+    const fallbackVerses = {
+      genesis: {
+        1: [
+          [1, "En el principio creó Dios los cielos y la tierra."],
+          [2, "Y la tierra estaba desordenada y vacía, y las tinieblas estaban sobre la faz del abismo, y el Espíritu de Dios se movía sobre la faz de las aguas."],
+          [3, "Y dijo Dios: Sea la luz; y fue la luz."],
+          [4, "Y vio Dios que la luz era buena; y separó Dios la luz de las tinieblas."],
+          [5, "Y llamó Dios a la luz Día, y a las tinieblas llamó Noche. Y fue la tarde y la mañana un día."],
+          [6, "Y dijo Dios: Haya expansión en medio de las aguas, y separe las aguas de las aguas."],
+          [7, "E hizo Dios la expansión, y separó las aguas que estaban debajo de la expansión, de las aguas que estaban sobre la expansión. Y fue así."],
+          [8, "Y llamó Dios a la expansión Cielos. Y fue la tarde y la mañana el día segundo."],
+          [9, "Y dijo Dios: Júntense las aguas que están debajo de los cielos en un lugar, y aparezca lo seco. Y fue así."],
+          [10, "Y llamó Dios a lo seco Tierra, y a la reunión de las aguas llamó Mares. Y vio Dios que era bueno."],
+          [11, "Y dijo Dios: Produzca la tierra hierba, y plantas que den semilla, y árboles frutales que den fruto según su género, que contenga su semilla en sí, sobre la tierra. Y fue así."],
+          [12, "Y produjo la tierra hierba, plantas que den semilla según su género, y árboles frutales que den fruto según su género, que contenga su semilla en sí. Y vio Dios que era bueno."],
+          [13, "Y fue la tarde y la mañana el día tercero."],
+          [14, "Y dijo Dios: Haya lumbreras en la expansión de los cielos para separar el día de la noche; y sirvan de señales, y para las estaciones, y para días y años."],
+          [15, "Y sirvan como lumbreras en la expansión de los cielos para alumbrar sobre la tierra. Y fue así."]
+        ]
+      }
+    };
+
+    function renderFallbackVerses(bookKey, chapter) {
+      const fallback = fallbackVerses[bookKey]?.[chapter];
+      if (!fallback) {
+        const message = document.createElement("p");
+        message.className = "chapter-status";
+        message.textContent = "No se pudo cargar esta lectura localmente. Intenta abrir la página desde un servidor local o comprueba tu conexión.";
+        chapterContent.replaceChildren(message);
+        return;
+      }
+
+      const fragment = document.createDocumentFragment();
+      fallback.forEach(([number, text]) => {
+        const verse = document.createElement("div");
+        verse.className = "verse";
+        const numberBox = document.createElement("span");
+        numberBox.className = "verse-number";
+        numberBox.textContent = number;
+        const words = document.createElement("p");
+        words.className = "verse-text";
+        words.textContent = text;
+        verse.append(numberBox, words);
+        fragment.append(verse);
+      });
+      chapterContent.replaceChildren(fragment);
+    }
+
+    function sourcePage(chapter) {
+      const book = books[currentBook];
+      const slug = book.slug || "genesis";
+      return `https://www.biblia.es/biblia-buscar-libros-1.php?libro=${encodeURIComponent(slug)}&capitulo=${chapter}&version=rv60`;
+    }
+
+    function renderChapters(query = "") {
+      const matches = Array.from({ length: books[currentBook].chapters }, (_, index) => index + 1)
+        .filter((chapter) => String(chapter).includes(query.trim()));
+      chapterGrid.replaceChildren();
+      if (matches.length === 0) {
+        const message = document.createElement("span");
+        message.className = "no-results";
+        message.textContent = "No hay capítulos con ese número.";
+        chapterGrid.append(message);
+        return;
+      }
+      matches.forEach((chapter) => {
+        const button = document.createElement("button");
+        button.className = "chapter-number";
+        button.type = "button";
+        button.textContent = String(chapter);
+        button.setAttribute("aria-label", `Leer ${books[currentBook].name} ${chapter} en Reina-Valera 1909`);
+        if (chapter === currentChapter) button.setAttribute("aria-current", "true");
+        button.addEventListener("click", () => selectChapter(chapter));
+        chapterGrid.append(button);
+      });
+    }
+
+    function selectChapter(chapter) {
+      currentChapter = Math.max(1, Math.min(books[currentBook].chapters, chapter));
+      chapterHeading.textContent = `${books[currentBook].name} ${currentChapter}`;
+      chapterCount.textContent = `CAPÍTULO ${String(currentChapter).padStart(2, "0")} DE ${books[currentBook].chapters}`;
+      chapterSource.href = sourcePage(currentChapter);
+      previousButton.disabled = currentChapter === 1;
+      nextButton.disabled = currentChapter === books[currentBook].chapters;
+      renderChapters(chapterSearch.value);
+      loadChapterText(currentBook, currentChapter);
+    }
+
+    function selectBook(bookKey) {
+      currentBook = bookKey;
+      currentChapter = 1;
+      document.querySelector("#page-title").textContent = books[bookKey].name;
+      document.title = `Senda | ${books[bookKey].name} en RVR1909`;
+      chapterHeading.textContent = `${books[bookKey].name} 1`;
+      chapterCount.textContent = `CAPÍTULO 01 DE ${books[bookKey].chapters}`;
+      chapterTotal.textContent = `${books[bookKey].chapters} capítulos`;
+      chapterSearch.value = "";
+      Object.entries(bookButtons).forEach(([key, button]) => {
+        button.setAttribute("aria-pressed", String(bookKey === key));
+      });
+      Object.entries(ntBookButtons).forEach(([key, button]) => {
+        button.setAttribute("aria-pressed", String(bookKey === key));
+      });
+      const isOldTestament = bookButtons[bookKey];
+      moreBooksLabel.textContent = isOldTestament ? "Más libros…" : books[bookKey].name;
+      moreBooksToggle.setAttribute("aria-expanded", "false");
+      moreBooksMenu.classList.remove("open");
+      ntMoreBooksLabel.textContent = ntBookButtons[bookKey] ? "Más libros…" : books[bookKey].name;
+      ntMoreBooksToggle.setAttribute("aria-expanded", "false");
+      ntMoreBooksMenu.classList.remove("open");
+      previousButton.disabled = true;
+      nextButton.disabled = false;
+      chapterSource.href = sourcePage(1);
+      chapterGrid.setAttribute("aria-label", `Capítulos de ${books[bookKey].name}`);
+      renderChapters();
+      loadChapterText(currentBook, currentChapter);
+    }
+
+    async function loadChapterText(bookKey, chapter) {
+      chapterContent.setAttribute("aria-busy", "true");
+      chapterContent.replaceChildren();
+      const status = document.createElement("p");
+      status.className = "chapter-status";
+      status.textContent = `Cargando ${books[bookKey].name} ${chapter}…`;
+      chapterContent.append(status);
+
+      const book = books[bookKey];
+      const sourceUrl = `https://www.biblia.es/biblia-buscar-libros-1.php?libro=${encodeURIComponent(book.slug)}&capitulo=${chapter}&version=rv60`;
+
+      try {
+        const response = await fetch(sourceUrl, { headers: { "User-Agent": "Mozilla/5.0" } });
+        if (!response.ok) throw new Error("No se pudo consultar la edición Reina-Valera 1960.");
+        const html = await response.text();
+        const sourceDocument = new DOMParser().parseFromString(html, "text/html");
+        const verseNodes = [...sourceDocument.querySelectorAll("span.versiculo")];
+        if (!verseNodes.length) throw new Error("No se encontró el capítulo.");
+
+        const verses = document.createDocumentFragment();
+        verseNodes.forEach((verseNode) => {
+          const numberElement = verseNode.querySelector("b");
+          const textElement = verseNode.nextElementSibling;
+          if (!numberElement || !textElement || !textElement.matches("span.texto")) return;
+          const number = numberElement.textContent.trim();
+          const text = textElement.textContent.replace(/\s+/g, " ").trim();
+          if (!number || !text) return;
+          const verse = document.createElement("div");
+          verse.className = "verse";
+          const numberBox = document.createElement("span");
+          numberBox.className = "verse-number";
+          numberBox.textContent = number;
+          const words = document.createElement("p");
+          words.className = "verse-text";
+          words.textContent = text;
+          verse.append(numberBox, words);
+          verses.append(verse);
+        });
+
+        if (!verses.childNodes.length) throw new Error("El capítulo no contiene versículos.");
+        if (bookKey !== currentBook || chapter !== currentChapter) return;
+        chapterContent.replaceChildren(verses);
+      } catch (error) {
+        if (bookKey !== currentBook || chapter !== currentChapter) return;
+        renderFallbackVerses(bookKey, chapter);
+      } finally {
+        if (bookKey === currentBook && chapter === currentChapter) chapterContent.setAttribute("aria-busy", "false");
+      }
+    }
+
+    bookButtons.genesis.addEventListener("click", () => selectBook("genesis"));
+    bookButtons.exodus.addEventListener("click", () => selectBook("exodus"));
+    bookButtons.leviticus.addEventListener("click", () => selectBook("leviticus"));
+    bookButtons.numbers.addEventListener("click", () => selectBook("numbers"));
+    ntBookButtons.matthew.addEventListener("click", () => selectBook("matthew"));
+    ntBookButtons.mark.addEventListener("click", () => selectBook("mark"));
+    ntBookButtons.luke.addEventListener("click", () => selectBook("luke"));
+    ntBookButtons.john.addEventListener("click", () => selectBook("john"));
+    moreBooksToggle.addEventListener("click", (event) => {
+      event.stopPropagation();
+      const willOpen = !moreBooksMenu.classList.contains("open");
+      moreBooksMenu.classList.toggle("open", willOpen);
+      moreBooksToggle.setAttribute("aria-expanded", String(willOpen));
+      if (willOpen) {
+        ntMoreBooksMenu.classList.remove("open");
+        ntMoreBooksToggle.setAttribute("aria-expanded", "false");
+      }
+    });
+    moreBooksOptions.forEach((option) => {
+      option.addEventListener("click", (event) => {
+        event.stopPropagation();
+        const bookKey = option.dataset.book;
+        if (bookKey) selectBook(bookKey);
+        moreBooksMenu.classList.remove("open");
+        moreBooksToggle.setAttribute("aria-expanded", "false");
+      });
+    });
+    ntMoreBooksToggle.addEventListener("click", (event) => {
+      event.stopPropagation();
+      const willOpen = !ntMoreBooksMenu.classList.contains("open");
+      ntMoreBooksMenu.classList.toggle("open", willOpen);
+      ntMoreBooksToggle.setAttribute("aria-expanded", String(willOpen));
+      if (willOpen) {
+        moreBooksMenu.classList.remove("open");
+        moreBooksToggle.setAttribute("aria-expanded", "false");
+      }
+    });
+    ntMoreBooksOptions.forEach((option) => {
+      option.addEventListener("click", (event) => {
+        event.stopPropagation();
+        const bookKey = option.dataset.book;
+        if (bookKey) selectBook(bookKey);
+        ntMoreBooksMenu.classList.remove("open");
+        ntMoreBooksToggle.setAttribute("aria-expanded", "false");
+      });
+    });
+    document.addEventListener("click", (event) => {
+      const clickTarget = event.target;
+      if (!clickTarget.closest(".custom-dropdown")) {
+        moreBooksMenu.classList.remove("open");
+        moreBooksToggle.setAttribute("aria-expanded", "false");
+        ntMoreBooksMenu.classList.remove("open");
+        ntMoreBooksToggle.setAttribute("aria-expanded", "false");
+      }
+    });
+    chapterSearch.addEventListener("input", () => renderChapters(chapterSearch.value));
+    previousButton.addEventListener("click", () => selectChapter(currentChapter - 1));
+    nextButton.addEventListener("click", () => selectChapter(currentChapter + 1));
+    renderChapters();
+    loadChapterText(currentBook, currentChapter);
+  </script>
+</body>
+</html>
